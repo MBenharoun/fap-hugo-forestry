@@ -21,15 +21,15 @@
                             <div class="item active">
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <img class="d-block w-10" src="img/imgprojet.png" alt="First slide">
+                                        <img class="d-block w-10" onmouseover="TargetMouse()" src="img/imgprojet.png" alt="First slide">
                                     </div>
                                     <div class="col-sm-4">
                                         {{- block "My First Post" . }}{{- end }}
                                        
-                                        <img class="d-block w-10" src="img/abeille.png" alt="First slide">
+                                        <img class="d-block w-10" onmouseover="TargetMouse()" src="img/abeille.png" alt="First slide">
                                     </div>
                                     <div class="col-sm-4">
-                                        <img class="d-block w-10" src="img/juice.png" alt="First slide">
+                                        <img class="d-block w-10" onmouseover="TargetMouse()" src="img/juice.png" alt="First slide">
                                     </div>
                                 </div>
                             </div>
@@ -48,13 +48,13 @@
                         <div class="item active">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="d-block w-10" src="img/social.png" alt="First slide">
+                                    <img class="d-block w-10" onmouseover="TargetMouse()" src="img/social.png" alt="First slide">
                                 </div>
                                 <div class="col-sm-4">
-                                    <img class="d-block w-10" src="img/work.png" alt="First slide">
+                                    <img class="d-block w-10" onmouseover="TargetMouse()" src="img/work.png" alt="First slide">
                                 </div>
                                 <div class="col-sm-4">
-                                    <img class="d-block w-10" src="img/phone.png" alt="First slide">
+                                    <img class="d-block w-10" onmouseover="TargetMouse()" src="img/phone.png" alt="First slide">
                                 </div>
                             </div>
                         </div>
@@ -74,13 +74,13 @@
                 <div class="item active">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img class="d-block w-10" src="img/imgprojet.png" alt="First slide">
+                            <img class="d-block w-10" onmouseover="TargetMouse()" src="img/imgprojet.png" alt="First slide">
                         </div>
                         <div class="col-sm-4">
-                            <img class="d-block w-10" src="img/abeille.png" alt="First slide">
+                            <img class="d-block w-10" onmouseover="TargetMouse()" src="img/abeille.png" alt="First slide">
                         </div>
                         <div class="col-sm-4">
-                            <img class="d-block w-10" src="img/juice.png" alt="First slide">
+                            <img class="d-block w-10" onmouseover="TargetMouse()" src="img/juice.png" alt="First slide">
                          </div>
                          
                     </div>
@@ -113,11 +113,13 @@
      {
          document.location.href="pages/projets"
      }
- </script>
- <script>
      function TargetMouse()
      {
-       onmouseover(alert='ca marche')
+
+     }
+     function openContact()
+     {
+         document.location.href="pages/contact"
      }
  </script>
 
