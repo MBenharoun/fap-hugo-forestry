@@ -1,0 +1,174 @@
+Index: layouts/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n{{ define \"main\" }}\r\n\r\n\r\n<div class=\"container\">\r\n    \r\n    <div class=\"section\">\r\n        <div class='wallpaper'>\r\n            <img src=\"img/wall.png\" alt=\"wallpaper NWS\" />\r\n        </div>\r\n        <div class=\"content\">\r\n <!------------------------------------------------------------------------------------------------------->  \r\n\r\n            <div class=\"sectionprojet\">\r\n                <h2 class=\"white\">Que font les étudiants au sein de notre école?</h2>\r\n                <p style= color:#00a5a5>Voici la globalité des projets conceptionner par nos étudiants </p>\r\n                <h3 style= color:#fec800 >Les plus récents</h3>\r\n            <div id=\"myCarousel\" class=\"carousel slide\">\r\n                    <div class=\"carousel-inner\">\r\n                        <div class=\"carousel\">\r\n                            <div class=\"item active\">\r\n                                <div class=\"row\">\r\n                                    <div class=\"col-sm-4\">\r\n                                        <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/imgprojet.png\" alt=\"First slide\">\r\n                                    </div>\r\n                                    <div class=\"col-sm-4\">\r\n                                        {{- block \"My First Post\" . }}{{- end }}\r\n                                       \r\n                                        <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/abeille.png\" alt=\"First slide\">\r\n                                    </div>\r\n                                    <div class=\"col-sm-4\">\r\n                                        <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/juice.png\" alt=\"First slide\">\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n            </div>\r\n         </div>\r\n    <!------------------------------------------------------------------------------------------------------->    \r\n\r\n    <div class=\"content2\">\r\n        <div class=\"sectionprojet\">\r\n        <h3 style= color:#e94a34>Cet année</h3>\r\n            <div id=\"myCarousel\" class=\"carousel slide\">\r\n                <div class=\"carousel-inner\">\r\n                    <div class=\"carousel\">\r\n                        <div class=\"item active\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-sm-4\">\r\n                                    <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/social.png\" alt=\"First slide\">\r\n                                </div>\r\n                                <div class=\"col-sm-4\">\r\n                                    <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/work.png\" alt=\"First slide\">\r\n                                </div>\r\n                                <div class=\"col-sm-4\">\r\n                                    <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/phone.png\" alt=\"First slide\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n <!------------------------------------------------------------------------------------------------------->  \r\n\r\n<div class=\"content\">\r\n    <div class=\"sectionprojet\">\r\n    <h3 style= color:#fec800 >Projets de 2018 à 2019</h3>\r\n    <div id=\"myCarousel\" class=\"carousel slide\">\r\n        <div class=\"carousel-inner\">\r\n            <div class=\"carousel\">\r\n                <div class=\"item active\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-sm-4\">\r\n                            <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/imgprojet.png\" alt=\"First slide\">\r\n                        </div>\r\n                        <div class=\"col-sm-4\">\r\n                            <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/abeille.png\" alt=\"First slide\">\r\n                        </div>\r\n                        <div class=\"col-sm-4\">\r\n                            <img class=\"d-block w-10\" onmouseover=\"TargetMouse()\" src=\"img/juice.png\" alt=\"First slide\">\r\n                         </div>\r\n                         \r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"content2\">\r\n    <div class=\"sectionprojetsuite\">\r\n        <div class=\"carousel\">\r\n            <h4>Vous voulez en découvrir davantage?</h4>\r\n            <button class=\"button3\" onclick=\"openProject() \" ><a href=\"#\">Voir tous les projets<i class=\"fas fa-arrow-circle-right\"></i></a></button>\r\n        </div>     \r\n    </div>\r\n    <div class=\"sectionprojetsuite\">\r\n        <div class=\"carousel\">\r\n            <img src=\"img/tirets.png\" alt=\"tiret NWS\" />   \r\n            <h4>Nos partenaires:</h4>\r\n            <img src=\"img/partenaire.png\" alt=\"partenaire NWS\" />          \r\n        </div>     \r\n    </div>\r\n</div> \r\n</div>\r\n\r\n <!------------------------------------------------------------------------------------------------------->\r\n\r\n <script>\r\n     function openProject()\r\n     {\r\n         document.location.href=\"pages/projets\"\r\n     }\r\n     function TargetMouse()\r\n     {\r\n\r\n     }\r\n     function openContact()\r\n     {\r\n         document.location.href=\"pages/contact\"\r\n     }\r\n </script>\r\n\r\n{{ end }}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- layouts/index.html	(revision e584a2ef0b559faedb5c33cb527c00373daccaa3)
++++ layouts/index.html	(date 1606468565620)
+@@ -12,7 +12,7 @@
+  <!------------------------------------------------------------------------------------------------------->  
+ 
+             <div class="sectionprojet">
+-                <h2 class="white">Que font les étudiants au sein de notre école?</h2>
++                <h2 class="white">Que font les étudiants au sein de la School ?</h2>
+                 <p style= color:#00a5a5>Voici la globalité des projets conceptionner par nos étudiants </p>
+                 <h3 style= color:#fec800 >Les plus récents</h3>
+             <div id="myCarousel" class="carousel slide">
+@@ -92,7 +92,6 @@
+ <div class="content2">
+     <div class="sectionprojetsuite">
+         <div class="carousel">
+-            <h4>Vous voulez en découvrir davantage?</h4>
+             <button class="button3" onclick="openProject() " ><a href="#">Voir tous les projets<i class="fas fa-arrow-circle-right"></i></a></button>
+         </div>     
+     </div>
+Index: static/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*.logo h1 {\r\n    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\r\n    font-size: 1.5em;\r\n}*/\r\n.title-image {\r\n    padding-bottom: 2em;\r\n}\r\nmain\r\n{\r\n    width: 100%;\r\n    flex: 1;\r\n    position: center;\r\n   \r\n}\r\nbody {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-height: 100vh;\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------HEADER----------------------------------\r\n__________________________________________________________________*/\r\n.logo\r\n{\r\n    float: left;\r\n    width: 7.5em;\r\n    margin-left: 10%;\r\n    margin-top: 1%;\r\n\r\n}\r\n.container\r\n{\r\n    margin-top: 0%;\r\n}\r\n.firstline\r\n{\r\n    margin-right: 10%;\r\n    float: right;\r\n}\r\n.navbar\r\n{\r\n    float: right;\r\n    margin-right: 10%;\r\n    margin-top: 1%;\r\n}\r\n.button1\r\n{\r\n    background-color: #00a5a5;\r\n    font-size: small;\r\n    border: none;\r\n}\r\n\r\n.button2\r\n{\r\n    background-color: #fec800;\r\n    font-size: small;\r\n    border: none;\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------ENDHEADER------------------------------\r\n__________________________________________________________________*/\r\n\r\n.wallpaper\r\n{\r\n    margin-top: 0%;\r\n \r\n    width: 100%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n.content\r\n{\r\n    background-color: black;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    width: 100%;\r\n\r\n}\r\n.sectionprojet\r\n{\r\n    width: 90%;\r\n    margin: auto;\r\n}\r\n.content2\r\n{\r\n    background-color: white;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n.projetslide\r\n{\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.h2\r\n{\r\n\r\n    color: white;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\nh3\r\n{\r\n    text-decoration: underline white;\r\n    \r\n}\r\n\r\n.carousel \r\n{\r\n    margin-bottom: 5%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n}\r\n.sectionprojetsuite\r\n{\r\n    text-align: center;\r\n   \r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.button3\r\n{\r\n    background-color: #00a5a5;\r\n    font-size: 2em;\r\n    border: none;\r\n    \r\n}\r\n.button3 a{\r\n    color: white;\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------ALLPROJETSMAIN------------------------------\r\n__________________________________________________________________*/\r\n.containervedetteprojet\r\n{\r\n    width: 90%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    justify-content: space-between ;\r\n    \r\n}\r\n.projetvedette li\r\n{\r\n    list-style: none;\r\n}\r\n.imgpro\r\n{\r\n    \r\n    /*height: 10em;*/\r\n    width: 100em;\r\n}\r\n\r\n.buttonproject\r\n{\r\n    border-radius: 10px;\r\n    background-color: white;\r\n    font-size: small;\r\n    border: none;\r\n}\r\n.buttonproject a\r\n{\r\n    color: black\r\n}\r\n.navbarprojetpage\r\n{\r\n    display: inline-flex;\r\n    justify-content: space-around;\r\nposition: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 1%;\r\n    background-color: black;\r\n}\r\n.navbarprojetpage a{\r\n    color: white;\r\n}\r\n.projetnavbar\r\n{\r\n    display: inline-flex; justify-content: space-between;color:white; list-style: none;\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------TextBoxOnmouse------------------------------\r\n__________________________________________________________________*/\r\n.row.col-sm-4:hover{\r\n\r\ncolor: white;\r\n\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------EtudiantsMAIN------------------------------\r\n__________________________________________________________________*/\r\n.classe\r\n{\r\n    filter: contrast();\r\n}\r\n.navbaretudiantspage\r\n{\r\n    display: inline-flex;\r\n    justify-content: space-around;\r\nposition: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 1%;\r\n   \r\n}\r\n.navbaretudiantspage a{\r\n    color: black;\r\n}\r\n.etudiantsnavbar\r\n{\r\n    display: inline-flex; justify-content: space-between;color:white; list-style: none;\r\n}\r\n.navbaretudiants {\r\n    justify-content: space-between;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n}\r\n.imgtexte\r\n{\r\n    position:absolute;\r\n    top:40%; \r\n    right: 0%;\r\n    left: 25%;\r\n    width:600px; \r\n    height:400px; \r\n    z-index:2;\r\n    font-size:100%\r\n}\r\nb{\r\n    color:#00a5a5;\r\n}\r\n/*_________________________________________________________________\r\n\r\n---------------------------FOOTER------------------------------\r\n__________________________________________________________________*/\r\n.footer\r\n{\r\n    background-color: #131313;\r\n}\r\n.containerfooter\r\n{\r\n\r\n    width: 70%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    justify-content: space-between ;\r\n    \r\n}\r\n.lastcontainerfooter\r\n{\r\n    color: white;\r\n    width: 70%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-evenly;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n}\r\n.nav-link\r\n{\r\n    color: black;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.photo1\r\n{\r\n    float: left;\r\n}\r\n\r\n.photo2\r\n{\r\n    float: right;\r\n}\r\n.footerline\r\n{\r\n    margin-top: 2%;\r\n    border-bottom:1px solid grey;\r\n}\r\n.copyright\r\n{\r\n    margin-top: 2%;\r\n    margin-bottom: 2%;\r\n    margin-left: 40%;\r\n    margin-right: auto;\r\n    color:grey ;\r\n    font-size: small;\r\n}\r\n.icon\r\n{\r\n    color: #fec800;\r\n\r\n}\r\n.red {\r\n    color: red;\r\n    }\r\n.white{\r\n    color:white;\r\n}\r\n.titlefooter\r\n{\r\n    text-decoration: underline red;\r\n}\r\n\r\n/*_________________________________________________________________\r\n\r\n---------------------------ENDFOOTER------------------------------\r\n__________________________________________________________________*/
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/css/style.css	(revision e584a2ef0b559faedb5c33cb527c00373daccaa3)
++++ static/css/style.css	(date 1606469947120)
+@@ -7,7 +7,7 @@
+ }
+ main
+ {
+-    width: 100%;
++    width: 80%;
+     flex: 1;
+     position: center;
+    
+@@ -31,7 +31,7 @@
+ }
+ .container
+ {
+-    margin-top: 0%;
++   margin-outside: auto;
+ }
+ .firstline
+ {
+@@ -86,7 +86,7 @@
+ }
+ .content2
+ {
+-    background-color: white;
++    background-color: grey;
+     margin-left: auto;
+     margin-right: auto;
+ 
+@@ -127,9 +127,8 @@
+ {
+     background-color: #00a5a5;
+     font-size: 2em;
+-    border: none;
+-    
+-}
++    border: none ;
++   }
+ .button3 a{
+     color: white;
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"919b1d0b-4157-438e-b898-60f098997625\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/layouts/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/layouts/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/layouts/partials/footer.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/layouts/partials/footer.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/layouts/partials/head.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/layouts/partials/head.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/layouts/partials/header.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/layouts/partials/header.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/static/css/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/static/css/style.css\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1kmfXRVBSkmxW1IMayxvwXtfa5T\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"919b1d0b-4157-438e-b898-60f098997625\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1606310728732</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1606310728732</updated>\r\n      <workItem from=\"1606310730199\" duration=\"302000\" />\r\n      <workItem from=\"1606313040487\" duration=\"3452000\" />\r\n      <workItem from=\"1606328577107\" duration=\"6871000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"2774\" y=\"304\" key=\"FileChooserDialogImpl\" timestamp=\"1606310750732\">\r\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"2774\" y=\"304\" key=\"FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040\" timestamp=\"1606310750732\" />\r\n    <state width=\"498\" height=\"398\" key=\"SwitcherDM\" timestamp=\"1606310754508\">\r\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"498\" height=\"398\" key=\"SwitcherDM/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040\" timestamp=\"1606310754508\" />\r\n    <state x=\"2657\" y=\"310\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1606310828529\">\r\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"2657\" y=\"310\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040\" timestamp=\"1606310828529\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision e584a2ef0b559faedb5c33cb527c00373daccaa3)
++++ .idea/workspace.xml	(date 1606472671064)
+@@ -1,12 +1,27 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="BranchesTreeState">
++    <expand>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </expand>
++    <select />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="919b1d0b-4157-438e-b898-60f098997625" name="Default Changelist" comment="">
++    <list default="true" id="919b1d0b-4157-438e-b898-60f098997625" name="Default Changelist" comment=".">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/layouts/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/footer.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/head.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/header.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -43,22 +58,53 @@
+       <updated>1606310728732</updated>
+       <workItem from="1606310730199" duration="302000" />
+       <workItem from="1606313040487" duration="3452000" />
+-      <workItem from="1606328577107" duration="6871000" />
++      <workItem from="1606328577107" duration="10085000" />
++    </task>
++    <task id="LOCAL-00001" summary=".">
++      <created>1606466948356</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1606466948356</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="." />
++    <option name="LAST_COMMIT_MESSAGE" value="." />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="2774" y="304" key="FileChooserDialogImpl" timestamp="1606310750732">
++    <state x="2258" y="173" key="DiffContextDialog" timestamp="1606466901754">
++      <screen x="1920" y="0" width="1920" height="1040" />
++    </state>
++    <state x="2258" y="173" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606466901754" />
++    <state x="2774" y="304" key="FileChooserDialogImpl" timestamp="1606468292115">
++      <screen x="1920" y="0" width="1920" height="1040" />
++    </state>
++    <state x="2774" y="304" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606468292115" />
++    <state width="498" height="398" key="SwitcherDM" timestamp="1606468299317">
+       <screen x="1920" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="2774" y="304" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606310750732" />
+-    <state width="498" height="398" key="SwitcherDM" timestamp="1606310754508">
++    <state width="498" height="398" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606468299317" />
++    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606466902913">
+       <screen x="1920" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="498" height="398" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606310754508" />
++    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606466902913" />
+     <state x="2657" y="310" width="672" height="678" key="search.everywhere.popup" timestamp="1606310828529">
+       <screen x="1920" y="0" width="1920" height="1040" />
+     </state>
