@@ -5,9 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: datetime
-  name: date
-  label: date
 - type: text
   name: layout
   label: layout
@@ -16,3 +13,6 @@ fields:
   config:
     required: false
   label: projet
+- type: datetime
+  name: date
+  label: date
