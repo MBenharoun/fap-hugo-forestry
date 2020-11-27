@@ -11,3 +11,8 @@ fields:
 - type: text
   name: layout
   label: layout
+- name: projet-test
+  type: text
+  config:
+    required: false
+  label: projet
