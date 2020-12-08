@@ -7,10 +7,10 @@
 }
 main
 {
-    width: 80%;
+    width: 100%;
     flex: 1;
     position: center;
-   
+
 }
 body {
     display: flex;
@@ -18,7 +18,6 @@ body {
     min-height: 100vh;
 }
 /*_________________________________________________________________
-
 ---------------------------HEADER----------------------------------
 __________________________________________________________________*/
 .logo
@@ -31,7 +30,7 @@ __________________________________________________________________*/
 }
 .container
 {
-   margin-outside: auto;
+    margin-top: 0%;
 }
 .firstline
 {
@@ -58,14 +57,13 @@ __________________________________________________________________*/
     border: none;
 }
 /*_________________________________________________________________
-
 ---------------------------ENDHEADER------------------------------
 __________________________________________________________________*/
 
 .wallpaper
 {
     margin-top: 0%;
- 
+
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -86,7 +84,7 @@ __________________________________________________________________*/
 }
 .content2
 {
-    background-color: grey;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
 
@@ -107,10 +105,10 @@ __________________________________________________________________*/
 h3
 {
     text-decoration: underline white;
-    
+
 }
 
-.carousel 
+.carousel
 {
     margin-bottom: 5%;
     margin-right: auto;
@@ -119,7 +117,7 @@ h3
 .sectionprojetsuite
 {
     text-align: center;
-   
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -127,13 +125,13 @@ h3
 {
     background-color: #00a5a5;
     font-size: 2em;
-    border: none ;
-   }
+    border: none;
+
+}
 .button3 a{
     color: white;
 }
 /*_________________________________________________________________
-
 ---------------------------ALLPROJETSMAIN------------------------------
 __________________________________________________________________*/
 .containervedetteprojet
@@ -145,7 +143,7 @@ __________________________________________________________________*/
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between ;
-    
+
 }
 .projetvedette li
 {
@@ -153,7 +151,7 @@ __________________________________________________________________*/
 }
 .imgpro
 {
-    
+
     /*height: 10em;*/
     width: 100em;
 }
@@ -173,7 +171,7 @@ __________________________________________________________________*/
 {
     display: inline-flex;
     justify-content: space-around;
-position: center;
+    position: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -187,16 +185,9 @@ position: center;
     display: inline-flex; justify-content: space-between;color:white; list-style: none;
 }
 /*_________________________________________________________________
-
----------------------------TextBoxOnmouse------------------------------
+---------------------------ENDPROJETSMAIN------------------------------
 __________________________________________________________________*/
-.row.col-sm-4:hover{
-
-color: white;
-
-}
 /*_________________________________________________________________
-
 ---------------------------EtudiantsMAIN------------------------------
 __________________________________________________________________*/
 .classe
@@ -207,11 +198,11 @@ __________________________________________________________________*/
 {
     display: inline-flex;
     justify-content: space-around;
-position: center;
+    position: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-   
+
 }
 .navbaretudiantspage a{
     color: black;
@@ -228,19 +219,93 @@ position: center;
 .imgtexte
 {
     position:absolute;
-    top:40%; 
+    top:40%;
     right: 0%;
     left: 25%;
-    width:600px; 
-    height:400px; 
+    width:600px;
+    height:400px;
     z-index:2;
     font-size:100%
 }
 b{
     color:#00a5a5;
 }
+.filière
+{
+    color: red;
+}
 /*_________________________________________________________________
+---------------------------conatcthtml-----------------------------
+__________________________________________________________________*/
+.contactmain
+{
+    display: flex;
+    margin-top: 40%;
+    justify-content: center;
+}
+.contactitems
+{
+    display: flex;
+    justify-content: center;
+}
+.items1
+{
+    width: 50%;
+    float: left;
+}
+.items2
+{
+    width: 50%;
+    float: right;
+    background-color: #fec800;
+}
+.items4
+{
+    width: 50%;
+    float: left;
+}
+.items3
+{
+    width: 50%;
+    float: right;
+    background-color: #00a5a5;
+}
+.items6
+{
+    width: 50%;
+    float: left;
+    background-color: #e94a34;
+}
+.items5
+{
+    width: 50%;
+    float: right;
+}
+.content3
+{
+    display: flex;
+}
+.navbar-contact
+{
+    display: flex;
+    margin-left: auto;
 
+}
+
+.contactsocialmain
+{
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.iconcontact
+{
+
+    color: #e94a34;
+}
+
+/*_________________________________________________________________
 ---------------------------FOOTER------------------------------
 __________________________________________________________________*/
 .footer
@@ -253,11 +318,11 @@ __________________________________________________________________*/
     width: 70%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between ;
-    
+
 }
 .lastcontainerfooter
 {
@@ -307,7 +372,7 @@ __________________________________________________________________*/
 }
 .red {
     color: red;
-    }
+}
 .white{
     color:white;
 }
@@ -317,6 +382,5 @@ __________________________________________________________________*/
 }
 
 /*_________________________________________________________________
-
 ---------------------------ENDFOOTER------------------------------
 __________________________________________________________________*/
